@@ -11,8 +11,8 @@ pip install altmetric
 Usage
 -----
 
-Fetching details by identifiers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Fetching details by identifiers**
+
 ```python
 from altmetric import Altmetric
 a = Altmetric()
@@ -27,8 +27,7 @@ a = Altmetric("you_api_key")
 a.fetch("doi","10.1126/science.1173146")
 ```
 
-Querying the database
-^^^^^^^^^^^^^^^^^^^^^
+**Querying the database**
 
 ```python
 from altmetric import Altmetric
@@ -37,8 +36,8 @@ a.citations('1d')
 a.citations('1d', page=2)
 ```
 
-Catching Errors
-^^^^^^^^^^^^^^^
+**Catching Errors**
+
 ```python
 from altmetric import Altmetric
 a = Altmetric()
@@ -65,4 +64,3 @@ API Reference
 
 Please see http://api.altmetric.com/ for detailed reference on response object
 and parameters.
-
